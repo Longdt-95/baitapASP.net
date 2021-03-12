@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+@Html.BeginForm("CheckLogin", "Login")
+@Html.Label("User Name")
+@Html.TextBox("userName1")
+<br />
+@Html.Label("Password")
+@Html.TextBox("password1")
+<br />
+<input type="submit" />
+@{Html.EndForm();
+}
+<div>@TempData["message"]</div>
+

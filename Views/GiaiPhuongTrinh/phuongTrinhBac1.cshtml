@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "phuongTrinhBac1";
+}
+
+<h2>Giải Phương trình bậc 1 có dạng ax + b = 0</h2>
+@Html.BeginForm("phuongTrinhBac1", "GiaiPhuongTrinh")
+@Html.Label("nhap so thu 1")
+@Html.TextBox("number1",0)
+<br />
+@Html.Label("nhap so thu 2")
+@Html.TextBox("number2",0)
+<br />
+<input type="submit"/>
+@{Html.EndForm();
+}
+<div id="result">ket qua là : @TempData["result"]</div>
+

@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "indexCaculator";
+}
+
+<h2>indexCaculator</h2>
+@Html.BeginForm("Caculator", "Caculator")
+@Html.Label("nhan so luong so")
+<br />
+@Html.TextBox("inputNumber")
+<button>sumit</button>
+@{Html.EndForm();
+}

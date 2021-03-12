@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Caculator";
+}
+
+<h2>Caculator</h2>
+@{ Html.BeginForm("addition", "Caculator"); }
+    @Html.Label("nhap so");
+    <br />
+   @{ for (var i = 0; i < int.Parse(@ViewBag.number); i++)
+        {
+            @Html.Label("number" + (i + 1));
+            @Html.TextBox("number" + i);
+            <br />
+        }
+}
+    <input type="submit" value="addition" name="addition"/>
+    <input type="submit" value="subtraction" name="subtraction"/>
+    <input type="submit" value="multiplication" name="multiplication"/>
+    <input type="submit" value="division" name="division"/>
+@{Html.EndForm(); }
+
+
+
+
+
